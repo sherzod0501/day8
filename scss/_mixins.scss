@@ -1,0 +1,14 @@
+@mixin chat ()  {
+    max-width: 65%;
+    min-width: 200px;
+    color: #ffffff;
+    background-color: rgb(79, 79, 255);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    margin-right: 12px;
+    position: relative;
+}

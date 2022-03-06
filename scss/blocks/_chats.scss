@@ -1,0 +1,46 @@
+.chats {
+    background-color: black;
+    background-image: url(../img/black__chat.jpg);
+    width: 500px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        height: 750px;
+        justify-content: end;
+        margin-bottom: 20px; 
+    }
+
+    &__one::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-top: 17px solid  rgb(79, 79, 255);
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid transparent;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    &__left{
+        @include chat;
+        &::before {
+            left: -12px;
+            top: 0;
+        }
+    }
+
+    &__right {
+        @include chat;
+        text-align: right;
+        align-self: flex-end;
+        &::before {
+            right: -12px;
+            top: 0;
+        }
+    }
+}
